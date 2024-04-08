@@ -5,6 +5,7 @@ import svgr from "vite-plugin-svgr";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "/administracion-club-copy/",
   plugins: [react(), svgr()],
   resolve: {
     alias: {
