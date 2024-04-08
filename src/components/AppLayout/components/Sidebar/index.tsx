@@ -1,14 +1,14 @@
 import {NavLink} from "react-router-dom"
 import './styles.css'
-import UsersIcon from "../../../../assets/sidebar-icons/UsersIcon";
-import HomeIcon from "../../../../assets/sidebar-icons/HomeIcon";
-import FansIcon from "../../../../assets/sidebar-icons/FansIcon";
-import TransactionsIcon from "../../../../assets/sidebar-icons/TransactionsIcon";
-import FixtureIcon from "../../../../assets/sidebar-icons/FixtureIcon";
-import TicketCollectorsIcon from "../../../../assets/sidebar-icons/TicketCollectorsIcon";
-import DonationsIcon from "../../../../assets/sidebar-icons/DonationsIcon";
-import StadiumsIcon from "../../../../assets/sidebar-icons/StadiumsIcon";
-import SponsorsIcon from "../../../../assets/sidebar-icons/SponsorsIcon";
+import UsersIcon from "@assets/sidebar-icons/UsersIcon";
+import HomeIcon from "@assets/sidebar-icons/HomeIcon";
+import FansIcon from "@assets/sidebar-icons/FansIcon";
+import TransactionsIcon from "@assets/sidebar-icons/TransactionsIcon";
+import FixtureIcon from "@assets/sidebar-icons/FixtureIcon";
+import TicketCollectorsIcon from "@assets/sidebar-icons/TicketCollectorsIcon";
+import DonationsIcon from "@assets/sidebar-icons/DonationsIcon";
+import StadiumsIcon from "@assets/sidebar-icons/StadiumsIcon";
+import SponsorsIcon from "@assets/sidebar-icons/SponsorsIcon";
 
 const Sidebar = () => {
   return (

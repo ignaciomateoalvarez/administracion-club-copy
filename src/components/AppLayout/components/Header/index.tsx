@@ -1,24 +1,25 @@
-import {NavLink} from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import './styles.css'
-import BellIcon from "../../../../assets/header-icons/BellIcon";
-import ArrowDownIcon from "../../../../assets/header-icons/ArrowDownIcon";
-
+import BellIcon from "@assets/header-icons/BellIcon";
+import ArrowDownIcon from "@assets/header-icons/ArrowDownIcon";
+import Logout from "@pages/Auth/components/Logout/index";
 
 const Header = () => {
   return (
     <header className="app-header">
       <nav>
         <NavLink to="/">Deportivo Armenio</NavLink>
-        <NavLink to="/profile">
-          <div className="header-profile-info-container">
-            <BellIcon/>
+        <div className="header-profile-info-container">
+          <NavLink to="/profile">
+            <BellIcon />
             Ignacio Alvarez
-            <ArrowDownIcon/>
-          </div>
-        </NavLink>
+            <ArrowDownIcon />
+          </NavLink>
+          <Logout />
+        </div>
       </nav>
     </header>
   )
-} 
+}
 
 export default Header;
