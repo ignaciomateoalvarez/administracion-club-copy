@@ -1,0 +1,21 @@
+.root-layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-container {
+  display: flex;
+ }
+
+ .main-outlet {
+  width: 85vw;
+  padding: 24px 54px;
+ }
+
+ .main-outlet h1 {
+  font-size: 30px;
+  font-weight: 500;
+ }
+
+
+

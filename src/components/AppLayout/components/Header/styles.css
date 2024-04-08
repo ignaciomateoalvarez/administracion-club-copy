@@ -1,0 +1,23 @@
+.app-header{
+  /* TODO: REVISTAR ESTO QUE NO SE COMO HACERLO */
+  display: grid;
+  background-color: #E5E7EA;
+  height: 10vh;
+  align-items: center;
+  padding: 0 75px
+}
+
+.app-header nav{
+  display: flex;
+  justify-content: space-between;
+}  
+
+.app-header a{
+  font-size: 18px;
+}
+
+.header-profile-info-container{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
