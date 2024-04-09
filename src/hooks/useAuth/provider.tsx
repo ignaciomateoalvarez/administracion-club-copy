@@ -10,6 +10,7 @@ interface AuthProps {
 interface AuthPayload {
   email: string;
   password: string;
+  rememberMe?: boolean;
 }
 
 interface User extends AuthPayload {}
