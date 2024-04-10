@@ -22,6 +22,13 @@ const Login = () => {
     navigate("/");
   };
 
+  const handleKeyPress = (e: { key: string; }) => {
+    if (e.key === 'Enter') {
+      handleLogin();
+    }
+  };
+  
+
   const handleButtonClick = () => {
     setModalOpen(false)
   }
@@ -33,7 +40,7 @@ const Login = () => {
         <h5>Deportivo Armenio</h5>
       </header>
       <div className="login-container">
-        <div className="login-content">
+        <div className="login-content" onKeyDown={handleKeyPress}>
           <h4>Iniciar sesión</h4>
           <div className="login-input-box email-input">
             <label>Correo electrónico</label>
@@ -46,15 +53,17 @@ const Login = () => {
           </div>
           <div className="login-input-box password-input">
             <label>Contraseña</label>
-            <input
-              type={InputType}
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              placeholder="**********"
-            />
-            <span className="password-toggle-icon">
-              {ToggledIcon}
-            </span>
+            <div className="password-input-wrapper">
+              <input
+                type={InputType}
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                placeholder="**********"
+                />
+              <span className="password-toggle-icon">
+                {ToggledIcon}
+              </span>
+            </div>
           </div>
           <div className="login-remember-forgot-container">
             <div className="remember-me">

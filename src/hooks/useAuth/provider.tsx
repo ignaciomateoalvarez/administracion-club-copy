@@ -11,6 +11,7 @@ interface AuthPayload {
   email: string;
   password: string;
   rememberMe?: boolean;
+  authToken?: string;
 }
 
 interface User extends AuthPayload {}
@@ -31,9 +32,12 @@ const AuthStateProvider = ({ children }: PropsWithChildren) => {
 
   const login = async (payload: AuthPayload) => {
     const response = await auth.loginAdmin(payload);
-    console.log(response)
-    console.log(response.data)
-      setCurrentUser(response.data);
+    const { data, headers } = response;
+    const authToken = headers.authorization;
+      setCurrentUser({
+        ...data.payload,
+        authToken,
+      });
     }
 
     const logout = () => {

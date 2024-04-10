@@ -8,7 +8,7 @@ import {
 import AppLayout from "@components/AppLayout/components/Content/index"
 
 // Pages imports
-import Dashboard from "@pages/Dashboard/components/index"
+import Dashboard from "@pages/Dashboard/index"
 import Users from "@pages/Users/components/index"
 import Fans from "@pages/Fans/components/index"
 import Transactions from "@pages/Transactions/components/index"

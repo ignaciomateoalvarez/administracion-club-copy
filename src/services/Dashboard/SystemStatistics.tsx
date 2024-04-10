@@ -1,9 +1,13 @@
-// import { axiosInstance } from "../BaseHttpService/BaseHttpService"
+import { axiosInstance } from "@services/BaseHttpService/BaseHttpService";
 
-// const systemStatisticsEnpoint = "api/v1/admin/admin_profiles/view_system_statistics"
+const statisticsEndpoint = "/api/v1/admin/admin_profiles/view_system_statistics";
 
-// export const systemStatistics = {
-//   get: function () {
-//     return axiosInstance.get(systemStatisticsEnpoint)
-//   }
-// } 
+export const systemStatistics = {
+  getSystemStatistics: function (token: string) {
+    return axiosInstance.get(statisticsEndpoint, {
+      headers: {
+        'Authorization': `Bearer ${token}`
+      }
+    });
+  }
+}

@@ -10,7 +10,7 @@ const ProtectedRoutes = ({children} : {children: React.ReactNode}) => {
     if (!currentUser) {
       navigate("/auth/login");
     }
-  }, [currentUser]);
+  }, [currentUser, navigate]);
 
     return(<>{children}</>)
 }

@@ -90,6 +90,19 @@
   border-radius: 2px;
 }
 
-.password-toggle-icon{
+.password-input-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
 
+  & input {
+    width: 100%;
+    padding-right: 40px;
+  }
+}
+
+.password-toggle-icon {
+  display: flex;
+  position: absolute;
+  right: 10px;
 }
