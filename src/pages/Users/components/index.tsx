@@ -1,7 +1,9 @@
+import UsersTable from "./UsersIndex";
+
 const Users = () => {
   return (
     <div>
-      <h1> Users </h1>
+      <UsersTable />
     </div>
   );
 };
